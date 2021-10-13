@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <style type="text/css" media="all">
+     body {
+       font-family: 'PT Serif', serif;
+     }
+     .gift_box {
+       width: 350px;
+       height: 311px;
+       background: whitesmoke;
+       box-shadow: 3px 2px 2px 2px;
+     }
+     #gift_text {
+       text-align: center;
+       font-size: 15px;
+     }
+     #gift_start {
+       width: 230px;
+       height: 30px;
+       background: orangered;
+       border: none;
+       border-radius: 10px;
+     }
+     #gift_show {
+       width: 230px;
+       height: 30px;
+       background: #00FF0E;
+       border: none;
+       border-radius: 10px;
+     }
+     #gift_button {
+       margin-top: 70px;
+       margin-left: 60px;
+     }
+     #gift {
+       text-align: center;
+       color: #00E9F9; 
+       font-size: 20px;
+     }
+     #turn {
+       width: 70px;
+       height: 70px;
+       border-radius: 2px;
+       background: #0014E6;
+       margin-left: 140px;
+     }
+    </style>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+ <div class="gift_box">
+   <div>
+     <b><p id="gift_text">Các phần quà:</p></b>
+     <b><p id="gift">Chưa có quà</p></b>
+   </div>
+   <div id="turn">
+    
+   </div>
+   <div id="gift_button">
+     <button id="gift_show">Xem số phần thưởng đã trúng</button>
+     <br>
+     <br>
+     <button id="gift_start">Quay</button>
+   </div>
+ </div>
+<script type="text/JavaScript" src="main.js" charset="utf-8">
+
+</script>
+</body>
+
+</html>
