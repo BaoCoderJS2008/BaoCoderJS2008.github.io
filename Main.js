@@ -17,7 +17,7 @@ if (window.XMLHttpRequest) {
 } else {
   request = new ActiveXObject("Microsoft.XMLHTTP");
 }
-request.open("GET", "https://raw.githubusercontent.com/BaoCoderJS2008/BaoCoderJS2008.github.io/main/Posts/Posts.json", false);
+request.open("GET", "Posts/Posts.json", false);
 request.onreadystatechange = () => {
   if (request.status == 200 && request.status !== 4) {
     const result = JSON.parse(request.responseText);
