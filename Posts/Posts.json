@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "author": "Nguyễn Thái Bảo",
+    "subject": "Tin Học",
+    "title": "Chào mừng bạn",
+    "content": "Web của mình chuyên đăng về môn Tin học (từ cơ bản và nâng cao), chúc các bạn học tốt môn Tin nha 😀"
+  },
+  {
+    "id": 2,
+    "author": "Nguyễn Thái Bảo",
+    "subject": "Tin Học",
+    "title": "",
+    "content": ""
+  }
+]
