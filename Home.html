@@ -12,7 +12,7 @@
     <script src="JS/Menu.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
-<body>
+<body id="body">
   <header>
       <h3 style="
   text-align: center;
@@ -30,16 +30,16 @@
     "><li style="
     margin-left: 10px;
     "><a href="#">Trang chủ</a></li>
-    <li class="far fa-address-card" style="
-    position: absolute;
-    top: 120px;
-    "></li>
+    <li
     <li><a href="#" style="
     margin-left: 10px;
     " id="info">Web dùng công nghệ gì để viết?</a></li>
     <li style="
     margin-left: 10px;
     "><a href="About.html">Thông tin Admin</a></li>
+     <li style="
+    margin-left: 10px;
+    "><a href="#" id="theme">Dark</a></li>
   </ul>
 </div>
 <div id="line"></div>
@@ -53,7 +53,7 @@
 <script type="text/javascript" charset="utf-8"> 
 $(document).ready(function() {
 
-/* ============= Thông tin web ============*/
+/* ============= Thông tin web =========== */
 var check_click = false;
   $("#info").click(function() {
     if (check_click == false) {
@@ -80,7 +80,7 @@ var check_click = false;
     $(this).hide();
     setTimeout(function() {
       $("#info").show();
-       $("#info").innerHTML = "Quay lại";
+       $("#info").val("Quay lại");
     }, 2000);
     check_click = true;
     } else {
