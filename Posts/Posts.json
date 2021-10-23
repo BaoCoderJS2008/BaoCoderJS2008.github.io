@@ -4,15 +4,17 @@
     "author": "Nguyễn Thái Bảo",
     "avatar": "https://avatars.githubusercontent.com/u/90696342?v=4",
     "subject": "Tin Học",
+    "date_created": "14:00 21-10-2021",
     "image": "Https://BaoCoderJS2008.github.io/Images/Computer.jpeg",
     "title": "Chào mừng bạn",
-    "content": "Xin chào, mình là Admin của trang này (Nguyễn Thái Bảo), Web của mình chuyên đăng về môn Tin học (từ cơ bản và nâng cao), chúc các bạn học tốt môn Tin nha 😀"
+    "content": "<b>1) Giới thiệu về Admin</b><br />Xin chào, mình tên Nguyễn Thái Bảo sinh năm 2008, mình làm ra web này nhằm hỗ trợ bạn nào không hiểu thầy cô Tin giảng cái gì. Chúc các bạn học tốt môn tin nha 😀<br /> Nếu trong quá trình xem có vấn đề gì thì bạn cứ ib mình qua Facebook hoặc Zalo nha, thông tin của mình sẽ để ở trong Menu. Admin cảm ơn bạn<br /><b>2) Mục đích làm web</b><br />Ừm như đã nói ở trên, mình thấy 1 số bạn không hiểu hoặc học không tốt môn tin 8 nên mình quyết định làm trang này để hướng dẫn các bạn."
   },
   {
     "id": 2,
     "author": "Nguyễn Thái Bảo",
     "avatar": "https://avatars.githubusercontent.com/u/90696342?v=4",
     "subject": "Tin Học",
+    "date_created": "14:06 21-10-2021",
     "image": "Https://BaoCoderJS2008.github.io/Images/bit.png",
     "title": "Ngôn ngữ máy là gì?",
     "content": "<b>1) Định nghĩa</b><br /> Trước tiên bạn cần phải biết, máy tính không thể hiểu được ngôn ngữ của con người. Vậy tại sao máy tính có thể chạy được ngôn ngữ lập trình? Chính là do trình biên dịch đã dịch ngôn ngữ lập trình ra dạng nhị phân (01). <br /> <b>Vậy Ngôn ngữ máy là ngôn ngữ duy nhất để viết chương trình mà máy tính trực tiếp hiểu và thực hiện được. Mỗi chương trình viết bằng ngôn ngữ khác muốn thực hiện trên máy tính đều phải được dịch ra ngôn ngữ máy bằng một chương trình dịch. Các lệnh viết ở ngôn ngữ máy ở dạng mã nhị phân hoặc dạng mã hexa.</b>"
@@ -22,6 +24,7 @@
     "author": "Nguyễn Thái Bảo",
     "avatar": "https://avatars.githubusercontent.com/u/90696342?v=4",
     "subject": "Tin Học",
+    "date_created": "14:00 21-10-2021",
     "image": "Https://BaoCoderJS2008.github.io/Images/P_languages.png",
     "title": "Ngôn ngữ lập trình là gì?",
     "content": "<b>1) Ngôn ngữ lập trình sinh ra để làm gì? </b><br />Con người chúng ta giao tiếp bằng ngôn ngữ, mỗi quốc gia có những ngôn ngữ riêng. vậy, gọi máy tính là trái đất đi. Trái đất có những quốc gia khác nhau, chia làm nhiều ngôn ngữ khác nhau (VD tiếng Anh, Việt,....), để giao tiếp với người ta thì bạn phải học tiếng nước họ. Vậy muốn giao tiếp với máy tính thì ta cần <b>Ngôn ngữ lập trình</b><br /> <b>2) Vậy Ngôn ngữ lập trình là gì? </b><br /> Ngôn ngữ lập trình hiểu đơn giản thì NNLT là tập hợp những câu lệnh lại thành 1 <b>Chương trình</b> để ra lệnh cho máy tính làm 1 công việc gì đó (VD như giải thuật, tính toán,....) <br /> <b>3) Ứng dụng trong cuộc sống như thế nào?</b><br />Tính ứng dụng thì có rất nhiều, điển hình như cái web mà bạn đang đọc được lập trình ra từ HTML, CSS, JavaScript, hay những app bạn truy cập hằng ngày như Facebook, Zalo, YouTube."
@@ -31,6 +34,7 @@
     "author": "Nguyễn Thái Bảo",
     "avatar": "https://avatars.githubusercontent.com/u/90696342?v=4",
     "subject": "Tin Học",
+    "date_created": "14:00 21-10-2021",
     "image": "",
     "title": "Các kiểu dữ liệu trong Pascal",
     "content": "<b>1) Các kiểu dữ liệu cơ bản</b><br /> <table border='1px'> <tr><th>Kiểu</th> <th>Loại</th> <th>Giá trị</th><th>Bộ nhớ (Byte)</th></tr><tr><td>String</td><td>Chuỗi</td><td>255 kí tự</td><td>1 đến 256</td></tr><tr><td>Int (Integer)</td><td>Số Nguyên</td><td>-32768 đến 32767</td><td>2</td></tr><tr><td>Real</td><td>Số thực</td><td>2.9e-39 đến 1.7e38 </td><td>6</td></tr><tr><td>Byte</td><td>Nguyên</td><td>0 đến 255</td><td>1</td></tr><tr><td>Double</td><td>Thực</td><td>5.0e-324 đến 1.7e308</td><td>8</td></tr><tr><td>LongInt</td><td>Nguyên</td><td>-2147483648 đến 2147483647</td><td>4</td></tr><tr><td>Single</td><td>Thực</td><td>1.5e-45 đến 3.4e38</td><td>4</td></tr><tr><td>ShotInt</td><td>Nguyên</td><td>-128 đến 127</td><td>1</td></tr><tr><td>Boolean</td><td>Logic</td><td>True/False</td><td>1</td></tr><tr><td>Char</td><td>Kí tự</td><td>Kí tự bất kì</td><td>1</td></tr><tr><td>Word</td><td>Nguyên</td><td>0 đến 65535</td><td>2</td></tr><tr><td>Comp</td><td>Thực</td><td>-9.2e18 đến 9.2e18</td><td>8</td></tr><tr><td>Extended</td><td>Thực</td><td>3.4e-4932 đến 1.1e4932</td><td>10</td></tr></table><br /><b>2) Kiểu Boolean</b><br />Kiểu Boolean nhận 2 giá trị là True và False tương ứng với 1 và 0. Nếu tìm hiểu sâu thì cái này liên quan đến Transistor.<br/><b>3) Các phép so sánh</b><br />- So sánh lớn hơn, VD như 2 > 1<br />- Phép so sánh nhỏ hơn, VD 5 < 6<br /> - Phép so sánh lớn hơn hoặc bằng, VD 5 >= 5 (Ở đây do 5 không lớn hơn 5 được nên sẽ là bằng nhau) <br />- Phép so sánh nhỏ hơn hoặc bằng, VD như 8 <= 8 <br /> Phép so sánh khác, VD như 3<>4. <br /> các phép so sánh trên trả về kiểu Boolean, nếu đúng thì là true, còn sai thì là false"
@@ -40,17 +44,29 @@
     "author": "Nguyễn Thái Bảo",
     "avatar": "https://avatars.githubusercontent.com/u/90696342?v=4",
     "subject": "Tin Học",
+    "date_created": "14:07 21-10-2021",
     "image": "Https://BaoCoderJS2008.github.io/Images/Computer.jpeg",
     "title": "Cấu trúc 1 chương trình trong Pascal",
-    "content": "<b>1) Cấu trúc</b><br />Program name; <br />uses crt;<br />begin<br />{Code}<br />end.<br /><b>2) Giải thích</b><br />- dòng program ở đây là khai báo tên chương trình <br /> - dòng uses crt là để khai báo thư viện crt <br /> - begin khai báo phần thân CT và end. là để kết thúc (lưu ý end phải có dấu chấm) <br /> đặt tên CT phải tuân thủ theo những điều sau: <br /> _1: không đặt tên bắt đầu bằng số <br /> _2: không có dấu và khoảng cách."
+    "content": "<b>1) Cấu trúc</b><br />Program name; <br />uses crt;<br />begin<br />clrscr;<br />end.<br /><b>2) Giải thích</b><br />- dòng program ở đây là khai báo tên chương trình <br /> - dòng uses crt là để khai báo thư viện crt <br /> - begin khai báo phần thân CT và end. là để kết thúc (lưu ý end phải có dấu chấm) <br /> clrscr là viết tắt của clear screen (xoá màn hình) <br /> đặt tên CT phải tuân thủ theo những điều sau: <br /> _1: không đặt tên bắt đầu bằng số <br /> _2: không có dấu và khoảng cách."
   },
   {
     "id": 6,
     "author": "Nguyễn Thái Bảo",
     "avatar": "https://avatars.githubusercontent.com/u/90696342?v=4",
     "subject": "Tin Học",
+    "date_created": "14:07 21-10-2021",
     "image": "",
     "title": "Khai báo biến trong Pascal",
     "content": "<b>1) Biến là gì?</b><br />- Biến là lưu trữ giá trị như số, chuỗi,....</br /> <b>2) Cú pháp</b><br /> Program name; <br /> var tenbien:kieu=giatri;<br />uses crt;<br />begin<br />{Code}<br />end.<br />- Ở đây, ta dùng từ khoá var để khai báo. var là viết tắt của variable, tenbien là tên của biến, kieu ở đây là kiểu dữ liệu, giatri là giá trị của biến. <br /><b>3) Ví Dụ</b><br />Program name; <br /> var name:string = 'Nguyễn Thái Bảo';<br />var age:integer = 13;<br />uses crt;<br />begin<br />{Code}<br />end.<br /> - ở đây biến name có kiểu là string (chuỗi) và được gán tên của tôi. Còn biến age có kiểu là số nguyên và được gán là 13"
+  },
+  {
+    "id": 7,
+    "author": "Nguyễn Thái Bảo",
+    "avatar": "https://avatars.githubusercontent.com/u/90696342?v=4",
+    "subject": "Tin Học",
+    "date_created": "14:07 21-10-2021",
+    "image": "",
+    "title": "Các hàm cơ bản trong Pascal",
+    "content": "<b>1) write và writeLn</b><br />- Cả 2 hàm trên đều có mục đích là in văn bản ra màn hình, VD: write('Hello World'); hoặc writeLn('Hello World'); vậy khác nhau chỗ nào? <br /> - Write là hàm in ra màn hình văn rồi thôi không xuống dòng. còn writeLn in ra rồi là nó sẽ xuống dòng. <br /><b>2) Hàm read và readLn</b><br />- Hàm read có tác dụng đọc những gì người dùng nhập từ bàn phím, cú pháp như sau: read(bien); <br />- bien ở đây là biến biến được khai báo, những gì nhập từ bàn phím sẽ lưu trong biến đó. "
   }
 ]
