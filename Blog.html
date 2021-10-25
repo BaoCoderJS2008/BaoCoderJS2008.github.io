@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog cá nhân</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" title="" type="" />
+  <link rel="stylesheet" href="CSS/Menu.css" />
+  <script src="JS/Menu.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<style type="text/css" media="all">
+  #post-title {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 300px;
+    height: 20px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  #post-content {
+    height: 100px;
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 20px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  #create {
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: #004BFF;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  #create:active {
+    background: #00FF43;
+  }
+
+  #main {
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+  }
+
+  #main>h4,
+  p {
+    text-align: center;
+  }
+
+  #registerForm>form>input {
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  #registerForm>form>input[type=button] {
+    height: 30px;
+    background: #16FF00;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+</style>
+
+<body>
+  <header id="Header">
+  <h3 style="
+    margin-left: 110px;
+    margin-top: -2px;
+  ">Blog cá nhân</h3>
+    <div id="menu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="menu-content">
+      <ul>
+        <li class="fa fa-home" style="
+    position: absolute;
+    top: 115px;
+    ">
+        <li style="
+    margin-left: 10px;
+    "><a href="#">Trang chủ</a></li>
+        <li <li><a href="#" style="
+    margin-left: 10px;
+    " id="info">Web dùng công nghệ gì để viết?</a></li>
+        <li style="
+    margin-left: 10px;
+    "><a href="About.html">Thông tin Admin</a></li>
+        <li style="
+    margin-left: 10px;
+    "><a href="#" id="register">Đăng ký</a></li>
+      </ul>
+    </div>
+    <div id="post_create">
+      <input id="post-title" placeholder="Tiêu đề" />
+      <textarea id="post-content" placeholder="Nội dung"></textarea>
+      <div id="tool">
+      <img src="img/images.png" style="
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 190px;
+      left: 30px;
+      " id="imgLogo" />
+      <a href="#" style="
+      margin-left: 80px;
+      margin-top: -2px;
+      " id="addImage">Thêm ảnh</a>
+      </div>
+      <form>
+      <input type="file" id="imageFile"  accept=".png .jpeg .jpg" hidden />
+      </form>
+      <button id="create">Đăng bài</button>
+    </div>
+    <div id="line"></div>
+    <br />
+    <br />
+  </header>
+  <div id="main">
+  </div>
+  <div style="
+     width: 300px;
+     height: 500px;
+     border: 1px solid black;
+     margin-left: 20px;
+     margin-top: 10px;
+     display: none;
+  " id="registerForm">
+    <h4 style="
+    text-align: center;
+    ">Đăng ký</h4>
+    <img src=" " style="
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    margin-left: 120px;
+    " id="avatarD" />
+    <form accept-charset="utf-8">
+      <input type="text" placeholder="Họ" id="Ho" />
+      <input type="text" placeholder="Tên" id="Ten" />
+      <input type="file" id="avatar" hidden />
+      <input type="button" value="Chọn avatar" id="select" />
+      <input type="button" id="submit" value="Đăng ký" />
+    </form>
+  </div>
+  <script type="text/javascript" src="JS/Blog.js" charset="utf-8">
+    
+  </script>
+</body>
+
+</html>
