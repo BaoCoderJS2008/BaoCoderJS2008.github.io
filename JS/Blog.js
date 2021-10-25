@@ -37,10 +37,18 @@ postImage.addEventListener("change", function(event) {
   fileReader.readAsDataURL(imageFile);
   fileReader.onload = function(readerEvent) {
     imageResult = readerEvent.target.result;
-    alert("Đã thêm ảnh thành công");
+    document.getElementById("preview").innerHTML = `
+    <img src="${imageResult}" style="
+    width: 200px;
+    height: 200px;
+    margin-left: 70px;
+    margin-top: 10px;
+    " />
+    `;
   }
 });
 $("#create").click(function() {
+  document.getElementById("preview").innerHTML = "";
   const title = document.getElementById("post-title");
   const content = document.getElementById("post-content");
   if (title.value.length > 1 && content.value.length > 1) {
