@@ -1,4 +1,8 @@
- .container {
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100&family=Zen+Antique+Soft&display=swap');
+Body {
+font-family: 'Zen Antique Soft', serif;
+}
+.container {
    display: inline-block;
    cursor: pointer;
  }
