@@ -184,4 +184,14 @@ $("#menu").click(function() {
     menuClick = false;
   }
 });
+var transClick = false;
+$("#trans").click(function() {
+  if (transClick == false) {
+  document.getElementById("imgLogo").style.top = "490px";
+  transClick = true;
+  } else {
+    document.getElementById("imgLogo").style.top = "390px";
+    transClick = false;
+  }
+});
 /* ======================================= */
