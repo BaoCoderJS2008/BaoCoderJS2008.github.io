@@ -14,7 +14,7 @@
  const home = document.getElementById("m1");
  function en() {
    $("#en").click(function() {
-     const enURL = "../lang/en.json";
+     const enURL = "../Lang/en.json";
      fetch(enURL)
        .then(response => response.json())
        .then(result => {
@@ -33,7 +33,7 @@
 
  function vi() {
     $("#vi").click(function() {
-     const viURL = "../lang/vi.json";
+     const viURL = "../Lang/vi.json";
      fetch(viURL)
        .then(response => response.json())
        .then(result => {
