@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
@@ -77,6 +77,9 @@
     border: 1px solid black;
     border-radius: 20px;
   }
+  #langList {
+    display: none;
+  }
 </style>
 
 <body>
@@ -84,7 +87,7 @@
   <h3 style="
     margin-left: 110px;
     margin-top: -2px;
-  ">Blog cá nhân</h3>
+  " id="title">Blog cá nhân</h3>
     <div id="menu">
       <div class="bar1"></div>
       <div class="bar2"></div>
@@ -92,19 +95,27 @@
     </div>
     <div id="menu-content">
       <ul>
-        <li class="fa fa-home" style="
-    position: absolute;
-    top: 115px;
-    ">
         <li style="
     margin-left: 10px;
-    "><a href="#">Trang chủ</a></li>
-        <li <li><a href="#" style="
+    "><a href="#" id="m1">Trang chủ</a></li>
+        <li><a href="#" style="
     margin-left: 10px;
     " id="info">Web dùng công nghệ gì để viết?</a></li>
         <li style="
     margin-left: 10px;
-    "><a href="About.html">Thông tin Admin</a></li>
+    ">
+    <a href="#" id="trans" onclick="selectLang();">
+      Chọn ngôn ngữ
+    </a>
+    </li>
+     <ul id="langList">
+       <li>
+         <a href="#" id="vi" onclick="vi();">Tiếng Việt</a>
+       </li>
+       <li>
+         <a href="#" id="en" onclick="en();">English</a>
+       </li>
+     </ul>
         <li style="
     margin-left: 10px;
     "><a href="#" id="register">Đăng ký</a></li>
@@ -168,6 +179,7 @@
   <script type="text/javascript" src="JS/Blog.js" charset="utf-8">
     
   </script>
+  <script src="JS/Lang.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
