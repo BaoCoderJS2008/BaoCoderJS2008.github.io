@@ -1,6 +1,13 @@
+```Cpp
+#include <iostream>
+using namespace std;
+int main(int argc, char* argv[]) {
+   cout << "Hello :D\n";
+   return 0;
+}
 ```
-Hello :D 
-```
+
+
 Bạn có thể liên hệ với tui qua:
 - Gmail: Baovn1179@gmail.com
 - Facebook: Нгуен Тайский Бао
