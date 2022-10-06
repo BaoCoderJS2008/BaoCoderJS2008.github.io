@@ -1,0 +1,95 @@
+
+<html lang="vi"
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            window.open = function () {};
+            window.print = function () {};
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        ></script>
+        <meta content="clickberry-extension-here" />
+    </head>
+
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <div class="pyro">
+            <div class="before">
+                
+            </div>
+            <div class="after">
+
+            </div>
+            <div class="container">
+                
+                <div class="balloon">
+                    <div><span>H</span></div>
+                    <div><span>A</span></div>
+                    <div><span>P</span></div>
+                    <div><span>P</span></div>
+                    <div><span>Y</span></div>
+                    <div><span>B</span></div>
+                    <div><span>I</span></div>
+                    <div><span>R</span></div>
+                    <div><span>T</span></div>
+                    <div><span>H</span></div>
+                    <div><span>D</span></div>
+                    <div><span>A</span></div>
+                    <div><span>Y</span></div>
+                </div>
+                <div class="avatar">
+                   
+                    <img src="./vy.png" alt="" class="avatar__img" onclick="showMessage()" />
+                   
+                    <h1 onclick="showMessage()" class="avatar__title">Nguyễn Thị Thảo Vy</h1>
+                </div>
+                
+             
+            </div>
+        </div>
+        <script>
+        var mu = new Audio();
+        mu.src = "music.mp3";
+        window.onclick = function() {
+          mu.play();
+        }
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                swal({
+                    title: "Lời nhắn", 
+                    text: "Chúc mừng sinh nhật Nguyễn Thị Thảo Vy lớp 9A5. Chúc bạn 1 tuổi mới luôn học giỏi, đạt được nhiều thành công trong cuộc sống ^^. \n\n- lập trình viên Nguyễn Thái Bảo 9A5", 
+                    button: {
+                        text: "Ok",
+                    }
+                });
+               
+            }
+            
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
