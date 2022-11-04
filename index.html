@@ -1,95 +1,138 @@
-
-<html lang="vi"
-    __fvdsurfcanyoninserted="1"
-    class="
+<html lang="vi" __fvdsurfcanyoninserted="1" class="
         clickberry-extension
         clickberry-extension-standalone
         clickberry-extension
         clickberry-extension-standalone
         clickberry-extension
         clickberry-extension-standalone
-    "
->
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
-        <title>20/10</title>
-        <link rel="stylesheet" href="res/style.css">
-        <script>
-            window.open = function () {};
-            window.print = function () {};
-            if (false) {
-                window.ontouchstart = function () {};
-            }
-        </script>
-        <script
-            type="text/javascript"
-            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
-        ></script>
-        <meta content="clickberry-extension-here" />
-    </head>
+    ">
 
-    <body>
-        <link
-            href="https://fonts.googleapis.com/css?family=Wendy+One"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <div class="pyro">
-            <div class="before">
-                
-            </div>
-            <div class="after">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="image/png" href="./res/BK.png" />
+  <title>Sinh nhật vui vẻ</title>
+  <link rel="stylesheet" href="res/style.css">
+  <script>
+    window.open = function() {};
+    window.print = function() {};
+    if (false) {
+      window.ontouchstart = function() {};
+    }
+  </script>
+  <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+  <meta content="clickberry-extension-here" />
+</head>
 
-            </div>
-            <div class="container">
-                
-                <div class="balloon">
-                    <div><span>C</span></div>
-                    <div><span>H</span></div>
-                    <div><span>Ú</span></div>
-                    <div><span>C</span></div>
-                    <div><span>M</span></div>
-                    <div><span>Ừ</span></div>
-                    <div><span>N</span></div>
-                    <div><span>G</span></div>
-                    <div><span>2</span></div>
-                    <div><span>0</span></div>
-                    <div><span>/</span></div>
-                    <div><span>1</span></div>
-                    <div><span>0</span></div>
-                </div>
-                <div class="avatar">
-                   
-                    <img src="res/Happy.png" alt="" class="avatar__img" onclick="showMessage()" />
-                   
-                    <h1 onclick="showMessage()" class="avatar__title">Chúc mừng ngày phụ nữ Việt Nam 20/10</h1>
-                </div>
-                
-             
-            </div>
-        </div>
-        <script>
-        var mu = new Audio();
-        mu.src = "music.mp3";
-        window.onclick = function() {
-          mu.play();
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+  <div class="pyro">
+    <div class="before">
+
+    </div>
+    <div class="after">
+
+    </div>
+    <div class="container">
+      <p class="title">Chúc mừng sinh nhật!</p>
+      <div class="balloon">
+        <div><span></span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+      </div>
+      <div class="avatar">
+        <img src="res/TAnh.png" alt="" class="avatar__img" onclick="showMessage()" />
+        <h1 onclick="showMessage()" class="avatar__title">Chúc mừng sinh nhật Trương Thị Tú anh lớp 9A5</h1>
+      </div>
+
+
+    </div>
+  </div>
+  <script>
+    var mu = new Audio();
+    mu.src = "./res/happy.mp3";
+    window.onclick = function() {
+      mu.play();
+    }
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+
+    function showMessage() {
+      Swal.fire({
+        title: 'Chúc mừng sinh nhật',
+        text: 'Chúc bạn Trương Thị Tú Anh sinh nhật vui vẻ, ngày càng học giỏi xinh đẹp và đỗ nguyện vọng 1 nha! À đúng rồi sau, chúc bạn sau này sẽ là người Đoàn viên Đoàn Thanh Niên Cộng Sản Hồ Chí Minh xuất sắc! \n- lập trình viên Nguyễn Thái Bảo lớp 9A5',
+        width: 700,
+        padding: '3em',
+        color: '#716add',
+        confirmButtonText: 'Xem lời chúc của Kim Anh',
+        backdrop: `
+    rgba(0,0,123,0.4)
+    url("./res/nyan-cat.gif")
+    no-repeat
+  `
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            text: "Chúc Tú Anh ngày càng mập ,chúc bạn lùn lại ,chúc bạn ãy chĩa suốt đời - Kim Anh lớp 9A5",
+            padding: '3em',
+            color: '#716add'
+          }).then(() => {
+            wish();
+          })
         }
-            if (document.location.search.match(/type=embed/gi)) {
-                window.parent.postMessage("resize", "*");
-            }
-            function showMessage() {
-                swal({
-                    title: "Lời nhắn", 
-                    text: "Chúc mừng ngày phụ nữ Việt Nam 20/10. Chúc các bạn càng ngày càng xinh, chăm ngoan học giỏi đạt được nhiều thành tích trong năm học!. \n\n- lập trình viên Nguyễn Thái Bảo lớp 9A5", 
-                    button: {
-                        text: "Ok",
-                    }
-                });
-               
-            }
-            
-        </script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    </body>
+      })
+    }
+
+    function wish() {
+      Swal.fire({
+        title: "Nhập điều ước của bạn",
+        width: 700,
+        padding: '3em',
+        color: '#716add',
+        input: "textarea"
+      }).then(result => {
+        gift();
+      })
+    }
+
+    function gift() {
+      Swal.fire({
+        title: "Bạn muốn nhận quà không?",
+        confirmButtonText: "Có chứ :))",
+      }).then(result => {
+        let timerInterval
+        Swal.fire({
+          title: "Hồi hợp không?",
+          html: "Đang mở quà đó, chờ trong vài giây thôi là có luôn! \n<b></b>",
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+              b.textContent = Swal.getTimerLeft()
+            }, 100)
+          },
+          willClose: () => {
+            clearInterval(timerInterval)
+          }
+        }).then(() => {
+          Swal.fire({
+            title: "Ta đa quà của Bảo nè",
+            text: "Đó là 1 quyển sách về tuyên ngôn của Đảng Cộng Sản thư đồng chí Tú Anh",
+            imageUrl: "./res/marx.png",
+            imageWidth: 400,
+            imageHeight: 400,
+            imageAlt: "My gift",
+          })
+      })
+      })
+    }
+    console.warn("Stop! Bạn vào Devtool để làm gì?");
+  </script>
+  <script src="./res/sweet.js"></script>
+</body>
+
 </html>
