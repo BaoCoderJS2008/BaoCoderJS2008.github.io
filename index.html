@@ -66,14 +66,13 @@
         width: 700,
         padding: '3em',
         color: '#716add',
-        confirmButtonText: 'Xem lời chúc của Kim Anh',
+        confirmButtonText: 'Xem tiếp nè!',
         backdrop: `
     rgba(0,0,123,0.4)
     url("./res/nyan-cat.gif")
     no-repeat
   `
       }).then((result) => {
-        if (result.isConfirmed) {
           Swal.fire({
             text: "Chúc Tú Anh ngày càng mập ,chúc bạn lùn lại ,chúc bạn ãy chĩa suốt đời - Kim Anh lớp 9A5",
             padding: '3em',
@@ -81,7 +80,7 @@
           }).then(() => {
             wish();
           })
-        }
+        
       })
     }
 
