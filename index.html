@@ -1,57 +1,133 @@
-<html lang="vi" __fvdsurfcanyoninserted="1" class="
-        clickberry-extension
-        clickberry-extension-standalone
-        clickberry-extension
-        clickberry-extension-standalone
-        clickberry-extension
-        clickberry-extension-standalone
-    ">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="shortcut icon" type="image/png" href="./res/BK.png" />
-  <title>Sinh nhật vui vẻ</title>
-  <link rel="stylesheet" href="res/style.css">
-  <script>
-    window.open = function () { };
-    window.print = function () { };
-    if (false) {
-      window.ontouchstart = function () { };
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Câu đố</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  </script>
-  <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
-  <meta content="clickberry-extension-here" />
+
+    body {
+      background-color: #000;
+      color: #eee;
+    }
+
+    .container {
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container p {
+      font-size: 2rem;
+      padding: 0.5rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container p span.typed-text {
+      font-weight: normal;
+      color: #dd7732;
+    }
+
+    .container p span.cursor {
+      display: inline-block;
+      background-color: #ccc;
+      margin-left: 0.1rem;
+      width: 3px;
+      animation: blink 1s infinite;
+    }
+
+    .container p span.cursor.typing {
+      animation: none;
+    }
+
+    @keyframes blink {
+      0% {
+        background-color: #ccc;
+      }
+
+      49% {
+        background-color: #ccc;
+      }
+
+      50% {
+        background-color: transparent;
+      }
+
+      99% {
+        background-color: transparent;
+      }
+
+      100% {
+        background-color: #ccc;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
-  <div class="pyro">
-    <div class="before">
-
-    </div>
-    <div class="after">
-
-    </div>
+  <main>
     <div class="container">
-      <p class="title">Chúc mừng sinh nhật!</p>
-      <div class="balloon">
-        <div><span></span></div>
-        <div><span></span></div>
-        <div><span></span></div>
-        <div><span></span></div>
-        <div><span></span></div>
-
-      </div>
-      <div class="avatar">
-        <img src="res/img.png" alt="" class="avatar__img"/>
-        <h1 onclick="showMessage()" class="avatar__title">Chúc mừng sinh nhật Kim Anh lớp 9A5</h1>
-      </div>
-      
-      <canvas id="pinkboard" onclick="showMessage();"></canvas>
+      <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
     </div>
-  </div>
-  <script src="./res/sweet.js"></script>
-  <script src="./res/TT.js"></script>
+  </main>
+
+  <script>
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+    const textArray = ["Yo! Chúc mừng bạn đã giải được câu đố của tôi :D", "Đợi trong giây lát, bạn sẽ có quà"];
+    const typingDelay = 50;
+    const erasingDelay = 60;
+    const newTextDelay = 800;
+    const p = "VNDCCH291945";
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    let tl = prompt("Nhập câu trả lời của bạn");
+    function type() {
+      if (charIndex < textArray[textArrayIndex].length) {
+        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      }
+      else {
+        cursorSpan.classList.remove("typing");
+        setTimeout(erase, newTextDelay);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0 && textArrayIndex < textArray.length) {
+        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      }
+      else {
+        cursorSpan.classList.remove("typing");
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) window.location = "https://youtu.be/dQw4w9WgXcQ";
+        setTimeout(type, typingDelay + 1100);
+      }
+    }
+    if (tl == p) {
+      document.addEventListener("DOMContentLoaded", function () {
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+      });
+    }
+    else {
+      alert("Câu trả lời sai rồi nhé :v");
+    }
+  </script>
 </body>
 
 </html>
