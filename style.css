@@ -1,0 +1,63 @@
+@keyframes hideAni {
+    from {
+        margin-left: 0%;
+        opacity: 1;
+    }
+    to {
+        margin-left: 80%;
+        opacity: 0;
+    }
+}
+
+#getLixi {
+    width: 15%;
+    height: 15%;
+}
+#getLixi:hover {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px #0000cc inset;
+}
+.hide {
+    display: none;
+}
+.hideAnimation {
+    animation: hideAni 2s ease-in-out;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+}
+#main {
+    position: absolute;
+    left: 40%;
+}
+.main img {
+    max-width: 100%;
+    max-height: 100%;
+}
+h1 {
+    text-align: center;
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 120px;
+}
+canvas {
+    cursor: crosshair;
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+}
+body {
+    background: #000 url("img/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#time {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
