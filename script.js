@@ -3,7 +3,6 @@ var openLixi = new Audio("./sound/glass.mp3");
 var clickSound = new Audio("./sound/click.mp3");
 var click = 0;
 var lixi = [];
-var lixiBtn = $("#getLixi");
 var main = $(".main");
 var timeP = $("#time");
 
@@ -42,12 +41,41 @@ function layLixi()
 function hienLixi()
 {
     Swal.fire({
+        title: 'Lì xì nè',
+        text: 'Bấm ok để mở nha :)',
+        imageUrl: './img/baolixi.png',
+        imageWidth: 400,
+        imageHeight: 400,
+        imageAlt: 'Custom image',
+    })
+    .then(() => {
+        clickSound.play();
+        taoLixi();
+        Swal.fire({
+            title: 'Bao lì xì',
+            text: 'Mở nhé?',
+            icon: 'question',
+            confirmButtonText: 'Ok'
+        })
+    .then(result => {
+            if (result.isConfirmed) {
+                openLixi.play();
+                Swal.fire({
+                    title: 'Hồi hợp không nè?',
+                    text: "Mở nha :))",
+                    icon: 'question',
+                    confirmButtonText: 'Mở đi!',
+                })
+            }
+        });
+    })
+    .then(() => { 
+        Swal.fire({
         text: `Xin chúc mừng bạn đã nhận được ${layLixi()}k Việt Nam đồng :D`
-    }).then(() => loiChuc());
-    lixiBtn.classList.toggle("hideAnimation");
-    setTimeout(() => lixiBtn.classList.toggle("hide"), 2000);
+    })
+    .then(() => loiChuc());
+});
 }
-
 function loiChuc()
 {
     Swal.fire({
@@ -57,6 +85,16 @@ function loiChuc()
                <p>Học sinh giỏi tin</p>
                <b>- Lập trình viên Nguyễn Thái Bảo 9/5</b>
         `
+    })
+    .then(() => {
+        Swal.fire({
+            title: "À đúng rồi",
+            html: `
+                <p>Mốt nhớ kèm mình nhiều hơn nhé nhất là môn toán đó :)</p>
+                <hr>
+                <b>- Lập trình viên Nguyễn Thái Bảo 9/5</b>
+            `
+        });
     });
 }
 
@@ -76,27 +114,10 @@ Swal.fire({
     left top
     no-repeat
   `
-});
+}).then(() => hienLixi());
 
 document.body.onclick = () => {
     if (click > 1) return;
     ++click;
     startSound.play();
-}
-lixiBtn.onclick = () => {
-    clickSound.play();
-    taoLixi();
-    Swal.fire({
-        title: 'Hồi hợp không nè?',
-        text: "Mở nhé :))",
-        icon: 'question',
-        confirmButtonText: 'Mở đi!',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            openLixi.play();
-            hienLixi();    
-            cls(3000);
-        }
-    });
-    
 }
