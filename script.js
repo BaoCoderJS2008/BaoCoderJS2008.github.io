@@ -10,7 +10,7 @@ var timeP = $("#time");
 
 setInterval(() => {
     var date = new Date();
-    var time = `Hôm nay là ngày ${date.getDay()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    var time = `Hôm nay là ngày ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
     timeP.textContent = time;
 }, 0.2);
 
